@@ -8,5 +8,12 @@ SELECT users_id, COUNT(*) AS nb_articles
 FROM Article
 GROUP BY users_id
 HAVING COUNT(*) >= 3;
+SELECT users_id, COUNT(*) AS nb_articles
+FROM Article
+GROUP BY users_id;
+
+SELECT AVG(nb_vues) AS moyenne_vues FROM Article;
+
+
 
 
